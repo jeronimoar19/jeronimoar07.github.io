@@ -1,0 +1,120 @@
+@charset "utf-8";
+/* CSS Document */
+	header {
+     background-image:url(ADOVE/encabezado4.jpeg);
+      background-size: cover; /* La imagen se ajusta para cubrir completamente el encabezado */
+      background-position: center; /* La imagen se centra en el encabezado */
+      height: 250px; /* Altura del encabezado */
+      text-align: center; /* Alinea el contenido al centro */
+      color:#000; /* Color del texto */
+      padding: 50px; /* Espacio interior del encabezado */
+	  font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif
+	}
+	*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+nav{
+	 font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	max-width:1550px;
+	margin:auto;
+	background-color:#333;
+	font-size:22px;
+	display: flex;
+    flex-direction: row;
+}
+.menu-horizontal{
+	list-style:none;
+	display: flex;
+	justify-content: space-around;
+}
+.menu-horizontal > li > a{
+	display:block;
+	padding:15px 20px;
+	color:white;
+	text-decoration: none;
+}
+.menu-horizontal > li:hover{
+	background-color: green;
+}
+.menu-vertical{
+	position:absolute;
+	display:none;
+	list-style:none;
+	width:200px;
+	background-color:rgba(0,0,0, .5);
+}
+.menu-horizontal li:hover .menu-vertical{
+	display:block;
+}
+.menu-vertical li:hover{
+	background-color: black;
+}
+.menu-vertical li a{
+	display:block;
+	color:white;
+	padding:15px 15px 15px 20px;
+	text-decoration:none;
+	
+}
+h1{
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif
+}
+section{
+	flex:70%;
+	background:#999;
+	padding:20px;	
+	max-width:1200px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+}
+aside{
+	float:right;
+     margin-top: 122px;
+	background:#0C9;	
+	padding:20px;
+	width:300px;
+	
+}
+h3{
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-align: center;
+}
+p{
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-align: center;
+}footer{
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-align: center;
+	background:#063;
+	padding:8px;
+	color:#FFF;
+}
+img {
+  display: block;
+  margin: auto;
+}
+@media screen and (max-width: 700px){
+nav,.container{
+flex-direction: column;
+}
+
+img{
+	width:100%;
+}
+header{
+	max-width:100%;
+}
+}
+	
+	
+	
+	
+	
+	
+	
+

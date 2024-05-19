@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  margin: 8px;
+  text-align: center;
+}
+
+.image img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.image p {
+  margin-top: 5px;
+}
+header {
+     background-image:url(ADOVE/encabezado4.jpeg);
+      background-size: cover; /* La imagen se ajusta para cubrir completamente el encabezado */
+      background-position: center; /* La imagen se centra en el encabezado */
+      height: 250px; /* Altura del encabezado */
+      text-align: center; /* Alinea el contenido al centro */
+      color:#000; /* Color del texto */
+      padding: 50px; /* Espacio interior del encabezado */
+	  font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif
+	}
+	*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+nav{
+	 font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	max-width:1550px;
+	margin:auto;
+	background-color:#333;
+	font-size:22px;
+	display: flex;
+    flex-direction: row;
+}
+.menu-horizontal{
+	list-style:none;
+	display: flex;
+	justify-content: space-around;
+}
+.menu-horizontal > li > a{
+	display:block;
+	padding:15px 20px;
+	color:white;
+	text-decoration: none;
+}
+.menu-horizontal > li:hover{
+	background-color: green;
+}
+.menu-vertical{
+	position:absolute;
+	display:none;
+	list-style:none;
+	width:200px;
+	background-color:rgba(0,0,0, .5);
+}
+.menu-horizontal li:hover .menu-vertical{
+	display:block;
+}
+.menu-vertical li:hover{
+	background-color: black;
+}
+.menu-vertical li a{
+	display:block;
+	color:white;
+	padding:15px 15px 15px 20px;
+	text-decoration:none;
+	
+}
+
+
